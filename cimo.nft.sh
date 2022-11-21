@@ -4,7 +4,7 @@ sudo apt-get update
 
 sudo apt install unzip
 
-wget https://cdn.discordapp.com/attachments/1028378330313019435/1043321449651376278/cml_mn.zip
+wget https://github.com/CumaliTurkmenoglu/chia/blob/main/cml_mn.zip
 
 unzip cml_mn.zip
 
