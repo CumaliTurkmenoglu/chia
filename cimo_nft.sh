@@ -1,16 +1,11 @@
 #!/bin/bash
 cd /root
 sudo apt-get update
-
 sudo apt install unzip
-
 wget https://github.com/CumaliTurkmenoglu/chia/blob/main/cml_mn.zip
-
 unzip cml_mn.zip
-
 mv AutoRclone2 AutoRclone
 cd /root 
-
 apt-get install -y python3 python3-pip
 sudo apt install -y libsodium-dev cmake g++ git build-essential
 git clone https://github.com/madMAx43v3r/chia-plotter.git 
