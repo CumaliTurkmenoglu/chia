@@ -28,6 +28,6 @@ cd /root
 chmod 777 /root/AutoRclone/autoClone/madmax.sh
 chmod 777 /root/AutoRclone/autoClone/autoClone.sh
 screen -dmS madmax
-screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax.sh UP 0^M" 
+screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax.sh UP 0 100 12 ^M" 
 #screen -dmS  clone
-#screen -S clone -X stuff  "/root/AutoRclone/autoClone/autoClone.sh disk2 UP 0^M"
+#screen -S clone -X stuff  "/root/AutoRclone/autoClone/autoClone.sh disk2 UP 0 100 12^M"
