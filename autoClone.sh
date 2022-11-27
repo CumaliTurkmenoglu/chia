@@ -4,7 +4,7 @@ while :
 do
 	n=$(( ( RANDOM % $5 )  + 3 ))
 	sa=$(( ( RANDOM % $4 )  + 1 ))
-	rclone move /$1/plots XGDrive$2_$n: --drive-upload-cutoff 1000T --tpslimit 5 --drive-stop-on-upload-limit --drive-chunk-size 1024M --no-traverse --ignore-existing -P --drive-service-account-file /root/AutoRclone/accounts/accounts_1/$sa.json
+	rclone move /$1/plots XGDrive$2_$n: --drive-upload-cutoff 1000T --tpslimit 5 --drive-stop-on-upload-limit --drive-chunk-size 1024M --no-traverse --ignore-existing -P --drive-service-account-file /root/AutoRclone/accounts/accounts_y/$n/$sa.json
      echo    "SA: $sa  dir: $n  $1/plots -> GDrive$2_$n:bucket$n"	
 	 sleep  10
 done
