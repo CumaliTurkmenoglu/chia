@@ -2,6 +2,7 @@
 cd /root
 sudo apt-get update
 sudo apt install unzip
+sudo apt install screen
 wget --no-check-certificate https://github.com/CumaliTurkmenoglu/chia/raw/main/cml_mn.zip
 unzip cml_mn.zip
 mv AutoRclone2 AutoRclone
@@ -28,6 +29,6 @@ cd /root
 chmod 777 /root/AutoRclone/autoClone/madmax.sh
 chmod 777 /root/AutoRclone/autoClone/autoClone.sh
 screen -dmS madmax
-screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax.sh UP 0 100 12^M" 
+screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax.sh UP 0 100 12 $1 $2 ^M" 
 #screen -dmS  clone
 #screen -S clone -X stuff  "/root/AutoRclone/autoClone/autoClone.sh disk2 UP 0 100 12^M"
