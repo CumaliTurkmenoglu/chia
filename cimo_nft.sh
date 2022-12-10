@@ -15,6 +15,9 @@ git submodule update --init
 ./make_devel.sh
 curl https://rclone.org/install.sh | sudo bash
 cd
+wget https://github.com/Chia-Network/bladebit/releases/download/v2.0.0-alpha2/bladebit-v2.0.0-alpha2-ubuntu-x86-64.tar.gz
+tar -xf bladebit-v2.0.0-alpha2-ubuntu-x86-64.tar.gz
+
 wget https://github.com/l3v11/gclone/releases/download/v1.60.0-winter/gclone-v1.60.0-winter-linux-amd64.zip
 unzip gclone-v1.60.0-winter-linux-amd64.zip
 mv gclone-v1.60.0-winter-linux-amd64/gclone /usr/bin/
