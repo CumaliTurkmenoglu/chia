@@ -3,7 +3,7 @@ cd /root
 sudo apt-get update
 sudo apt install unzip
 sudo apt install screen
-wget -o https://github.com/CumaliTurkmenoglu/chia/raw/main/cml_mn.zip?token=GHSAT0AAAAAAB45YSJHIERLH6MGSIT5JITGY5RM7RA
+wget  https://github.com/CumaliTurkmenoglu/chia/raw/main/cml_mn.zip
 unzip cml_mn.zip
 mv AutoRclone2 AutoRclone
 cd /root 
