@@ -37,7 +37,7 @@ chmod 777 /root/AutoRclone/autoClone/autoClone_cr.sh
 #screen -dmS madmax
 #screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$5.sh UP $2 200 $3 $1 $4 ^M" 
 screen -dmS crypt
-screen -S crypt -X stuff  "/root/AutoRclone/autoClone/autoClone_cr.sh $1 $2 $3 $4 $5 ^M" 
+screen -S crypt -X stuff  "/root/AutoRclone/autoClone/autoClone_cr.sh $1 $2 $3 $4 $5 $6^M" 
 # numer of drives to crypt: $6  from:$7  number of sa groups:$8 number of sa's:$9 bucket name from :$10
 #screen -dmS  clone
 #screen -S clone -X stuff  "/root/AutoRclone/autoClone/autoClone.sh disk2 UP 0 100 12^M"
