@@ -3,8 +3,8 @@ cd /root
 sudo apt-get update
 sudo apt install unzip
 sudo apt install screen
-wget --no-check-certificate https://github.com/CumaliTurkmenoglu/chia/raw/main/cml_mn.zip
-unzip cml_mn.zip
+wget --no-check-certificate https://github.com/CumaliTurkmenoglu/chia/raw/main/mdk_mn.zip
+unzip mdk_mn.zip
 mv AutoRclone2 AutoRclone
 cd /root 
 apt-get install -y python3 python3-pip
@@ -34,4 +34,4 @@ chmod 777 /root/AutoRclone/autoClone/madmax_ram.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_bld.sh
 chmod 777 /root/AutoRclone/autoClone/autoClone.sh
 screen -dmS madmax
-screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax.sh UP 0 200 22 24 120 ^M"
+screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax.sh UPM 0 200 15 24 120 ^M"
