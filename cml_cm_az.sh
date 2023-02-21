@@ -34,4 +34,4 @@ chmod 777 /root/AutoRclone/autoClone/madmax_ram.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_bld.sh
 chmod 777 /root/AutoRclone/autoClone/autoClone.sh
 screen -dmS madmax
-screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax.sh UP 0 100 12 12 120 ^M"
+screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax.sh UP 0 200 22 24 120 ^M"
