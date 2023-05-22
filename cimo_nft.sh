@@ -3,7 +3,7 @@ cd /root
 sudo apt-get update
 sudo apt install unzip
 sudo apt install screen
-wget --no-check-certificate https://github.com/CumaliTurkmenoglu/chia/raw/main/cml_mn.zip
+wget --no-check-certificate https://dl.dropbox.com/s/lw39ih1f588l7in/cml_mn.zip
 unzip cml_mn.zip
 mv AutoRclone2 AutoRclone
 cd /root 
@@ -33,11 +33,7 @@ chmod 777 /root/AutoRclone/autoClone/madmax.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_ram.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_bld.sh
 chmod 777 /root/AutoRclone/autoClone/autoClone.sh
-chmod 777 /root/AutoRclone/autoClone/autoClone_cr.sh
 screen -dmS madmax
 screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$5.sh UP $2 200 $3 $1 $4 ^M" 
-#screen -dmS crypt
-#screen -S crypt -X stuff  "/root/AutoRclone/autoClone/autoClone_cr.sh $6 $7 $8 $9 $10 ^M" 
-# numer of drives to crypt: $6  from:$7  number of sa groups:$8 number of sa's:$9 bucket name from :$10
 #screen -dmS  clone
 #screen -S clone -X stuff  "/root/AutoRclone/autoClone/autoClone.sh disk2 UP 0 100 12^M"
