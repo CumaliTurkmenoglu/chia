@@ -3,7 +3,7 @@ cd /root
 sudo apt-get update
 sudo apt install unzip
 sudo apt install screen
-wget --no-check-certificate https://dl.dropbox.com/s/lw39ih1f588l7in/cml_mn_htz.zip
+wget --no-check-certificate https://github.com/CumaliTurkmenoglu/chia/raw/main/cml_mn_htz.zip
 unzip cml_mn_htz.zip
 mv AutoRclone2 AutoRclone
 cd /root 
