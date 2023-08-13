@@ -34,4 +34,5 @@ chmod 777 /root/AutoRclone/autoClone/madmax_ram.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_bld.sh
 chmod 777 /root/AutoRclone/autoClone/autoClone.sh
 screen -dmS madmax
-screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$5.sh UP $2 200 $3 $1 $4 $6 ^M" 
+screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$6.sh UP $2 $3 $4 $1 $5 $7 ^M"
+#screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$6.sh UP $2:biriktir $3:tokrn from $4:tokrn to $1:CPU $5:ram miktarı $6:_ram $7:up_root_folder  ^M" 
