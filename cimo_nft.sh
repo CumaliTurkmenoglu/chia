@@ -13,7 +13,14 @@ git clone https://github.com/madMAx43v3r/chia-plotter.git
 cd chia-plotter
 git submodule update --init
 ./make_devel.sh
-curl https://rclone.org/install.sh | sudo bash
+
+sudo apt-get install screen sshpass git curl fuse && curl https://rclone.org/install.sh | sudo bash
+cd 
+cd /usr/bin
+rm rclone
+wget https://prol1337.de/rclone16/rclone
+chmod 777 rclone
+
 cd
 wget https://github.com/Chia-Network/bladebit/releases/download/v2.0.0-alpha2/bladebit-v2.0.0-alpha2-ubuntu-x86-64.tar.gz
 tar -xf bladebit-v2.0.0-alpha2-ubuntu-x86-64.tar.gz
