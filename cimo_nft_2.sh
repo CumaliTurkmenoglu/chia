@@ -22,8 +22,17 @@ wget https://prol1337.de/rclone16/rclone
 chmod 777 rclone
 
 cd
-wget https://github.com/Chia-Network/bladebit/releases/download/v2.0.0-alpha2/bladebit-v2.0.0-alpha2-ubuntu-x86-64.tar.gz
-tar -xf bladebit-v2.0.0-alpha2-ubuntu-x86-64.tar.gz
+#wget https://github.com/Chia-Network/bladebit/releases/download/v2.0.0-alpha2/bladebit-v2.0.0-alpha2-ubuntu-x86-64.tar.gz
+#tar -xf bladebit-v2.0.0-alpha2-ubuntu-x86-64.tar.gz
+
+sudo apt install -y build-essential cmake libgmp-dev libnuma-dev
+
+git clone https://github.com/Chia-Network/bladebit.git && cd bladebit
+# Create a build directory for cmake and cd into it
+mkdir -p build && cd build
+# Generate config files & build
+cmake ..
+cmake --build . --target bladebit --config Release
 
 wget https://github.com/l3v11/gclone/releases/download/v1.60.0-winter/gclone-v1.60.0-winter-linux-amd64.zip
 unzip gclone-v1.60.0-winter-linux-amd64.zip
