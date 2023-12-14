@@ -3,7 +3,7 @@ cd /root
 sudo apt-get update
 sudo apt install unzip
 sudo apt install screen
-wget --no-check-certificate https://github.com/CumaliTurkmenoglu/chia/raw/main/cml_mn_ibm.zip
+wget --no-check-certificate  https://github.com/CumaliTurkmenoglu/chia/raw/main/ibm/cml_mn_ibm/cml_mn_ibm.zip
 unzip cml_mn_ibm.zip
 mv AutoRclone2 AutoRclone
 cd /root 
