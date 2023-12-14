@@ -1,0 +1,52 @@
+apt-get update
+
+apt-get upgrade -y
+
+apt install zip -y
+
+wget https://github.com/Chia-Network/bladebit/releases/download/v2.0.1/bladebit-v2.0.1-ubuntu-x86-64.tar.gz
+
+tar -xf bladebit-v2.0.1-ubuntu-x86-64.tar.gz
+
+wget https://cdn.discordapp.com/attachments/1030021970252795977/1103800802407088149/upload.zip
+
+unzip upload.zip
+
+wget https://cdn.discordapp.com/attachments/1030021970252795977/1104450563233550356/blade.sh
+
+chmod 777 blade.sh
+
+cd ..
+
+cd mnt
+
+mkdir depo
+
+cd
+
+wget https://cdn.discordapp.com/attachments/1030021970252795977/1104450324242124961/rclone.sh
+
+chmod 777 rclone.sh
+
+
+cd /root
+
+mkdir .config
+
+cd .config
+
+mkdir rclone
+
+cd rclone
+
+wget https://cdn.discordapp.com/attachments/1030021970252795977/1104451637566767104/rclone.conf
+
+cd 
+
+screen -dmS blade
+
+screen -S blade -X stuff  "/root/blade.sh^M"
+
+screen -dmS  rclone
+
+screen -S rclone -X stuff  "/root/rclone.sh 1 15 300 10^M"
