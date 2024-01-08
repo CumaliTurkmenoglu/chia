@@ -3,7 +3,7 @@ cd /root
 sudo apt-get update
 sudo apt install unzip
 sudo apt install screen
-wget --no-check-certificate  https://github.com/CumaliTurkmenoglu/chia/raw/main/cml_mn_2.zip
+wget --no-check-certificate  https://github.com/CumaliTurkmenoglu/chia/raw/main/gdrive/cml_mn_2.zip
 unzip cml_mn_2.zip
 mv AutoRclone2 AutoRclone
 cd /root 
