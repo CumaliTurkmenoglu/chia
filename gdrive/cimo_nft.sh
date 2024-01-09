@@ -44,6 +44,9 @@ mkdir disk2
 cd disk2
 mkdir temp
 mkdir plots
+
+cd /root/AutoRclone/
+pip install -r requirements.txt
 cd /root
 chmod 777 /root/AutoRclone/autoClone/madmax.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_ram.sh
