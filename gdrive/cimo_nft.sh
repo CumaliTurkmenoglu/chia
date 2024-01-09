@@ -41,14 +41,18 @@ mv gclone-v1.60.0-winter-linux-amd64/gclone /usr/bin/
 cd /
 mkdir disk2
 
+
 cd disk2
 mkdir temp
 mkdir plots
+
+cd /root/AutoRclone/
+pip install -r requirements.txt
 cd /root
 chmod 777 /root/AutoRclone/autoClone/madmax.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_ram.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_bld.sh
 chmod 777 /root/AutoRclone/autoClone/autoClone.sh
 screen -dmS madmax
-screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax_$5.sh $1 $2 $3 $4 ^M"
-#screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$5.sh $1: 1 den kaçıncı tokena kadar $2: transfers $3: kaç cpu, $4: ram miktarı^M"
+screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$5.sh $1 $2 $3 $4 ^M"
+#screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$5.sh $1: drive(token) $2: transfers $3: kaç cpu, $4: ram miktarı^M"
