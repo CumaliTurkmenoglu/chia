@@ -49,6 +49,11 @@ mkdir plots
 cd /root/AutoRclone/
 pip install -r requirements.txt
 cd /root
+
+sudo apt install python3-pip -y
+pip install gdown
+pip install --upgrade gdown
+
 chmod 777 /root/AutoRclone/autoClone/madmax.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_ram.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_bld.sh
