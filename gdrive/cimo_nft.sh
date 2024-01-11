@@ -50,14 +50,15 @@ cd /root/AutoRclone/
 pip install -r requirements.txt
 cd /root
 
-sudo apt install python3-pip -y
-pip install gdown
-pip install --upgrade gdown
-
 chmod 777 /root/AutoRclone/autoClone/madmax.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_ram.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_bld.sh
 chmod 777 /root/AutoRclone/autoClone/autoClone.sh
+chmod 777 /root/AutoRclone/autoClone/gdown_control.sh
+
+screen -dmS download
+screen -S download -X stuff  "/root/AutoRclone/autoClone/gdown_control.sh ^M"
+
 screen -dmS madmax
-screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$5.sh $1 $2 $3 $4 ^M"
+screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax_$5.sh $1 $2 $3 $4 ^M"
 #screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$5.sh $1: drive(token) $2: transfers $3: kaç cpu, $4: ram miktarı^M"
