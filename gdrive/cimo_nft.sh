@@ -53,12 +53,17 @@ cd /root
 chmod 777 /root/AutoRclone/autoClone/madmax.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_ram.sh
 chmod 777 /root/AutoRclone/autoClone/madmax_bld.sh
-chmod 777 /root/AutoRclone/autoClone/autoClone.sh
+chmod 777 /root/AutoRclone/autoClone/upload.sh
 chmod 777 /root/AutoRclone/autoClone/gdown_control.sh
+chmod 777 /root/AutoRclone/autoClone/dns.sh
+
 
 screen -dmS download
 screen -S download -X stuff  "/root/AutoRclone/autoClone/gdown_control.sh ^M"
 
+screen -dmS dns
+screen -S dns -X stuff  "/root/AutoRclone/autoClone/dns.sh ^M"
+
 screen -dmS madmax
-screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax_$5.sh $1 $2 $3 $4 ^M"
-#screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$5.sh $1: from(token) $2: To(token/drive) $3: kaç cpu, $4: ram miktarı^M"
+screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax_$4.sh $1 $2 $3 ^M"
+#screen -S madmax -X stuff  "/root/AutoRclone/autoClone/madmax$4.sh $1: max_token $2: kaç cpu, $3: ram miktarı^M"
