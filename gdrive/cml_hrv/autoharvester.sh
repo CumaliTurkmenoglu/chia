@@ -25,7 +25,8 @@ rm rclone
 sshpass -p 'Serhildanroot.123' scp -o StrictHostKeyChecking=no -r root@5.161.224.217:/usr/bin/rclone /usr/bin/
 chmod 777 rclone
 
-mkdir /root/.config/rclone/
+mkdir /root/.config
+mkdir /root/.config/rclone
 
 mv /root/cml_hrv/rclone.conf /root/.config/rclone/
 
