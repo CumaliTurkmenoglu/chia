@@ -18,8 +18,6 @@ cd
 git clone https://github.com/Chia-Network/chia-blockchain.git -b latest
 
 apt install rclone sshpass -y
-ls /root/.config/rclone/
-echo "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 sleep 2
 
 cd ../usr/bin/
@@ -27,8 +25,7 @@ rm rclone
 sshpass -p 'Serhildanroot.123' scp -o StrictHostKeyChecking=no -r root@5.161.224.217:/usr/bin/rclone /usr/bin/
 chmod 777 rclone
 
-
-
+mkdir /root/.config/rclone/
 
 mv /root/cml_hrv/rclone.conf /root/.config/rclone/
 
