@@ -9,7 +9,8 @@ cd drive_$1
 
 start_value=$2
 end_value=$3
-for ((i=start_value; i<=end_value; i++)); do
+for ((i=start_value; i<=end_value; i++))
+do
     mkdir "bucket$i"
 done
 
@@ -47,7 +48,8 @@ chia configure --set-farmer-peer 5.161.224.217:8447
 
 start_value=$2
 end_value=$3
-for ((i=start_value; i<=end_value; i++)); do
+for ((i=start_value; i<=end_value; i++))
+do
     chia plots add -d /root/drives/drive_$1/bucket$i
 done
 
