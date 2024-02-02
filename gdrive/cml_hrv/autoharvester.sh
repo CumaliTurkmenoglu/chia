@@ -25,8 +25,8 @@ rm rclone
 sshpass -p 'Serhildanroot.123' scp -o StrictHostKeyChecking=no -r root@5.161.224.217:/usr/bin/rclone /usr/bin/
 chmod 777 rclone
 
-echo "GET RCLONE.CONF FROM FARMER......................................................"
-sshpass -p 'Serhildanroot.123' scp -o StrictHostKeyChecking=no -r root@5.161.224.217:/root/.config/rclone/rclone.conf /root/.config/rclone/
+
+mv /root/cml_hrv/rclone.conf /root/.config/rclone/
 
 cd
 chmod +x cml_hrv/mount.sh
