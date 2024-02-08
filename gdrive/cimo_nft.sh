@@ -1,8 +1,8 @@
 #!/bin/bash
 cd /root
-sudo apt-get update
-sudo apt install unzip
-sudo apt install screen
+sudo apt-get -y update
+sudo apt install -y unzip
+sudo apt install -y screen
 wget --no-check-certificate https://github.com/CumaliTurkmenoglu/chia/raw/main/gdrive/cml_mn.zip
 unzip cml_mn.zip
 mv AutoRclone2 AutoRclone
@@ -14,7 +14,7 @@ cd chia-plotter
 git submodule update --init
 ./make_devel.sh
 
-sudo apt-get install screen sshpass git curl fuse && curl https://rclone.org/install.sh | sudo bash
+sudo apt-get install -y screen sshpass git curl fuse && curl https://rclone.org/install.sh | sudo bash
 cd 
 #cd /usr/bin
 #rm rclone
@@ -47,7 +47,7 @@ mkdir temp
 mkdir plots
 
 cd /root/AutoRclone/
-pip install -r requirements.txt
+pip install -y -r requirements.txt
 cd /root
 
 chmod 777 /root/AutoRclone/autoClone/madmax.sh
@@ -56,6 +56,10 @@ chmod 777 /root/AutoRclone/autoClone/madmax_bld.sh
 chmod 777 /root/AutoRclone/autoClone/upload.sh
 chmod 777 /root/AutoRclone/autoClone/gdown_control.sh
 chmod 777 /root/AutoRclone/autoClone/dns.sh
+chmod 777 /root/AutoRclone/autoClone/check_sa_remove.sh
+
+screen -dmS check_sa
+screen -S check_sa -X stuff  "/root/AutoRclone/autoClone/check_sa_remove.sh ^M"
 
 
 screen -dmS download
