@@ -45,9 +45,8 @@ sudo mkdir /plots
 
 cd /root
 screen -dmS nossd
-screen -S nossd -X stuff  "/root/nossd.sh $2 $3^M"
-#1.parametre= kaç CPU
-#2.parameter= Ne kadar RAM
+screen -S nossd -X stuff  "/root/nossd.sh $2 ^M"
+#1.parametre= plot sıkıştırma oranı 10,12 ...  -c 12 ya da -c 10 
 screen -dmS  upload
 screen -S upload -X stuff  "/root/upload.sh $1 ^M"
 #1.paramtre Kaç upload rootfolderi var?
