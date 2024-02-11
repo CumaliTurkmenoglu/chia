@@ -17,8 +17,8 @@ chmod 777 gdown_control.sh
 chmod 777 dns.sh
 chmod 777 check_sa_remove.sh
 
-mkdir /root/sa/accounts_temp
-mkdir /root/sa/accounts_up
+mkdir -p /root/sa/accounts_temp
+mkdir -p /root/sa/accounts_up
 wget --no-check-certificate https://github.com/CumaliTurkmenoglu/chia/raw/main/gdrive/sa.zip
 unzip sa.zip -d /root/sa/accounts_up
 bash rename_accounts_rnd.sh up
