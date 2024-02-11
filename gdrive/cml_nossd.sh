@@ -1,6 +1,6 @@
 apt-get update -y
-
-apt upgrade -y
+export DEBIAN_FRONTEND=noninteractive
+sudo apt-get upgrade -y -o Dpkg::Options::="--force-confold"
 
 apt-get install unzip -y
 
