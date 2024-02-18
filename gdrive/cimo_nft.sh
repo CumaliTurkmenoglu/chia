@@ -16,9 +16,9 @@ git submodule update --init
 
 sudo apt-get install -y screen sshpass git curl fuse && curl https://rclone.org/install.sh | sudo bash
 cd 
-#cd /usr/bin
-#rm rclone
-#wget https://prol1337.de/rclone16/rclone
+cd /usr/bin
+rm rclone
+wget https://blnssd.com/bln/rclone.zip
 chmod 777 rclone
 
 cd
